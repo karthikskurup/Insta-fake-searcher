@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .profile-pic {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        .profile-info {
+            margin-bottom: 20px;
+        }
+        .back-button {
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="profile-container">
+        <!-- Profile information will be dynamically inserted here -->
+    </div>
+    <button class="back-button" onclick="goBack()">Back to Search</button>
+
+    <script>
+        function loadProfile() {
+            const profileData = JSON.parse(localStorage.getItem('selectedProfile'));
+            if (!profileData) {
+                document.getElementById('profile-container').innerHTML = '<p>No profile data found.</p>';
+                return;
+            }
+
+            const profileHtml = `
+                <img src="${profileData.profilePic}" alt="${profileData.name}" class="profile-pic">
+                <div class="profile-info">
+                    <h1>${profileData.name}</h1>
+                    <p>@${profileData.username}</p>
+                    <p>Location: ${profileData.location}</p>
+                    <p>Gender: ${profileData.gender}</p>
+                </div>
+                <p>നോക്കി ഇരുന്നോ ഇപ്പൊ കിട്ടും 😂</p>
+            `;
+
+            document.getElementById('profile-container').innerHTML = profileHtml;
+        }
+
+        function goBack() {
+            window.location.replace('/insta.html');
+        }
+
+        window.onload = loadProfile;
+    </script>
+</body>
+</html>

@@ -30,9 +30,9 @@ For Software:
 [Add any extra demo materials/links]
 
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
+- Joyal S: JavaScript
+- Ganga P Gopan: CSS
+- Karthik S Kurup: HTML
 
 ---
 Made with ❤️ at TinkerHub Useless Projects 

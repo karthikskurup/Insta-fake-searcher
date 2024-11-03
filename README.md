@@ -25,8 +25,6 @@ Create an Kerala Instagram Account Searcher for serch account by giving district
 For Software:
 - HTML & CSS
 - Visual Studio Code
-# Additional Demos
-[Add any extra demo materials/links]
 
 ## Team Contributions
 - Joyal S: JavaScript

@@ -1,6 +1,6 @@
 body {
     background-image: url('/last.png'); /* Ensure the path is correct */
-    background-size: auto; /* Covers the entire viewport */
+    background-size: center; /* Covers the entire viewport */
     background-position: center; /* Center the background image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-attachment: fixed; /* Image stays fixed during scrolling */
